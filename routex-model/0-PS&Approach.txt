@@ -1,0 +1,21 @@
+PROBLEM
+
+development of route ranking ML model based of various criteria with the use of OSM, OSR and Leaflet.
+
+APPROACH
+
+this can be achieved by dividing the problem into 7 phases:
+
+phase 1: tech stack decision assuming other docs are already prepared
+
+phase 2: initial set up of frontend, backend, database and APIs
+
+phase 3: ML model development, gathering datasets, remove noise and unwanted details, decide on features, select model, optimize the model and finally deploy as an API
+
+phase 4: integration of API with frontend and backend via map displays, API calls, testing of endpoints that are built and complete visualiztion
+
+phase 5: Apply further features of classification and optimize them 
+
+phase 6: add user auth (optional)
+
+phase 7: deploy on render (free) and vercel (free)

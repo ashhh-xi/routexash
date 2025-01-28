@@ -1,0 +1,32 @@
+PHASE 2: initial set up of frontend, backend, database and APIs
+
+FRONTEND: 
+
+create-next-app with leaflet axios and react-leaflet
+
+BACKEND:
+
+express js with dotenv, cors, pg, body-parser, express-validator and jsonwebtoken
+get usage info of npm packages at https://www.npmjs.com
+
+ML:
+
+Scikit-Learn (just imports for models)
+
+DATABASE:
+
+PostgreSQL and define all tables with features in place for retrieval and insertions according to live database
+
+APIs: 
+
+ORS: https://openrouteservice.org/dev/#/api-docs
+
+Leaflet: https://leafletjs.com/reference.html
+
+OSM: https://wiki.openstreetmap.org/wiki/Map_features
+
+all the APIs can be found on the above link with perfect use cases
+
+POSTMAN:
+
+https://www.getpostman.com/ for testing the APIs and endpoints

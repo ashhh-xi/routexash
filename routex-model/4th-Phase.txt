@@ -1,0 +1,17 @@
+PHASE 4: integration of API with frontend and backend via map displays, API calls, testing of endpoints that are built and complete visualiztion
+
+FRONTEND:
+
+use leaflet and react-leaflet to display the map and modify according to API requests using the useEffect hook or the axios library
+
+BACKEND:
+
+use express js with the axios library to make the API calls to the ORS API and get the data to be displayed on the map
+also add the deployed ML route to the backend as a route 
+add APIs from OSR and OSM to the backend so that the server is unified
+
+based on the API calls update the map and other components using the useEffect hook and useState hook
+
+DATABASE:
+
+add the ML route to the database so that it can be retrieved and displayed on the map

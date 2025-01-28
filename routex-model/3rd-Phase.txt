@@ -1,0 +1,61 @@
+PHASE 3: ML model development, gathering datasets, remove noise and unwanted details, decide on features, select model, optimize the model and finally deploy as an API
+
+ML model development can be done via the Scikit Learn library of python
+
+Dataset can be found here: https://download.geofabrik.de/asia.html 
+and it updates every 3 days to every week
+
+the dataset has to be downloaded and then cleaned to keep only necessary details and remove noise
+features like time, scenic route and other details are to be kept
+
+the dataset is to be split into training and testing sets based on which the further training can be done.
+
+model selection can be done based on the accuracy and other parameters
+
+for now the best model seems to be the Random Forest model as it is faster initially
+after Random forest XGBoost and lightGBM can be used to optimize the model
+
+information for training and usage of model can be found at
+RandomForestClassifier: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+XGBoost: https://xgboost.readthedocs.io/en/latest/index.html
+lightGBM: https://lightgbm.readthedocs.io/en/latest/index.html
+
+after the models are written based on requirements and trained they can be further optimized
+
+psuedo-code may look like:
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+
+# Sample features: distance, time, fuel_efficiency
+X = [[100, 50, 8], [200, 80, 5], [150, 60, 6]]  # Feature matrix
+y = [1, 0, 1]  # Labels (0: not optimal, 1: optimal)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+print(classification_report(y_test, predictions))
+
+after the model is trained it can be deployed as an API
+
+the API can be deployed on vercel or render using Flask and the pseudo-code may look like:
+
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.get_json()    # Get the data from the POST request
+    distance = data['distance']
+    time = data['time']
+    fuel_efficiency = data['fuel_efficiency']
+    prediction = model.predict([[distance, time, fuel_efficiency]])  # Use the model to make a prediction
+    return jsonify({'prediction': prediction})
+
+if __name__ == '__main__':
+    app.run()
+
+the API can be tested using Postman

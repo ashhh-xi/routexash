@@ -1,0 +1,8 @@
+PHASE 7: deploy on render (free) and vercel (free)
+
+Deploy the backend and frontend on render and vercel respectively
+
+Render: https://render.com/
+Vercel: https://vercel.com
+
+make the whole frontend scalable and responsive using tailwindCSS

@@ -1,0 +1,9 @@
+PHASE 5: Apply further features of classification and optimize them
+
+features to be added:
+1. time
+2. scenic route
+3. fuel efficiency
+4. distance
+
+based on further requirements more features can be added and optimized via XGBoost, lightGBM and Random Forest

@@ -1,0 +1,14 @@
+PHASE 6: add user auth (optional)
+
+user auth can be added to the frontend and backend
+the user will be able to login and register to the application 
+
+and the applcation remains safe as well
+
+use jwt tokens for authentication
+google auth can also be used
+for validation use zod or express validator
+
+JWT and zod are npm library
+
+while googleOauth2.0 can be used via google developer console

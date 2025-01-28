@@ -1,0 +1,9 @@
+PHASE 1: tech stack decision assuming other docs are already prepared
+
+
+frontend: Next JS, and other required libraries for support and styling
+backend: express js with npm packages according to requirement
+ML: Scikit-Learn
+Database: PostgreSQL
+APIs: OpenServiceRouter (ORS), Leaflet and OpenStreetMap (ORM)
+Deployment: Vercel for frontend, Render for ML model and Backend and Docker for Database
